@@ -12,15 +12,13 @@ int clumsyFactorial(int n)
     while (n > 0)
     {
         if (curr % 4 == 0)
-            cout << "1" << endl, ans = n * (n - 1);
+            ans = n * (n - 1);
         else if (curr % 4 == 1)
-            cout << "2" << endl, ans /= (n - 1);
+            ans /= (n - 1);
         else if (curr % 4 == 2)
-            cout << "3" << endl, arr2.push_back(n - 1);
+            arr2.push_back(n - 1);
         else
         {
-            cout << "ans : " << ans << endl;
-            cout << "n : " << n << endl;
             arr.push_back(ans);
             if (n == 2)
                 arr.push_back(1);
